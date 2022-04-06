@@ -17,7 +17,7 @@ const Header = ({ siteTitle, wpPages, wpPost }) => (
             </Nav.Link> 
             )}
             <NavDropdown title="Blog Posts">
-              {wpPost.map(item => <NavDropdown.Item key={item.id}><Link to={`/blog/${item.slug}`}>{item.title}</Link></NavDropdown.Item>)}
+              {wpPost.map(item => <NavDropdown.Item key={`post-${item.id}`} href={`/blog/${item.slug}`}>{item.title}</NavDropdown.Item>)}
               <NavDropdown.Item><Link>Older Blog-posts</Link></NavDropdown.Item>
             </NavDropdown>
         </Navbar.Collapse>
