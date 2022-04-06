@@ -1,11 +1,11 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
-import { Container, Navbar,  Nav } from 'react-bootstrap'
+import { Container, Navbar,  Nav, NavDropdown } from 'react-bootstrap'
 
-const Header = ({ siteTitle, wpPages }) => (
-    <Navbar bg="dark" expand="md">
-          <Navbar.Brand href="/" className="text-white mr-4 ml-0">
+const Header = ({ siteTitle, wpPages, wpPost }) => (
+    <Navbar bg="dark" expand="md" className="mb-4">
+          <Navbar.Brand href="/" className="text-white m-1">
             {siteTitle}
           </Navbar.Brand>
       <Container>
@@ -16,6 +16,10 @@ const Header = ({ siteTitle, wpPages }) => (
               {item.title}
             </Nav.Link> 
             )}
+            <NavDropdown title="Blog Posts">
+              {wpPost.map(item => <NavDropdown.Item key={item.id}><Link to={`/blog/${item.slug}`}>{item.title}</Link></NavDropdown.Item>)}
+              <NavDropdown.Item><Link>Older Blog-posts</Link></NavDropdown.Item>
+            </NavDropdown>
         </Navbar.Collapse>
       </Container>
     </Navbar>

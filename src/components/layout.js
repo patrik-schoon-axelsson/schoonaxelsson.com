@@ -27,12 +27,19 @@ const Layout = ({ children }) => {
           id
         }
       }
+      allWpPost(limit: 5, sort: {fields: date, order: DESC}) {
+        nodes {
+          title
+          slug
+          id
+        }
+      }
     }
   `)
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} wpPages={data.allWpPage.nodes} />
+      <Header siteTitle={data.site.siteMetadata?.title || `Title`} wpPages={data.allWpPage.nodes} wpPost={data.allWpPost.nodes} />
       <div
         style={{
           margin: `0 auto`,
