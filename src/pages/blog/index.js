@@ -32,7 +32,7 @@ return (
 
 export const query = graphql`
 query BlogIndexQuery {
-    allWpPost {
+    allWpPost(sort: {fields: date, order: DESC}) {
         edges {
             node {
                 id

@@ -1,11 +1,10 @@
-import * as React from "react"
-import PropTypes from "prop-types"
-import { Link } from "gatsby"
-import { Container, Navbar,  Nav, NavDropdown } from 'react-bootstrap'
+import * as React from "react";
+import PropTypes from "prop-types";
+import { Container, Navbar,  Nav, NavDropdown } from 'react-bootstrap';
 
 const Header = ({ siteTitle, wpPages, wpPost }) => (
-    <Navbar bg="dark" expand="md" className="mb-4">
-          <Navbar.Brand href="/" className="text-white m-1">
+    <Navbar bg="light" expand="md" className="mb-4">
+          <Navbar.Brand href="/" className="text-black m-1">
             {siteTitle}
           </Navbar.Brand>
       <Container>
@@ -18,7 +17,9 @@ const Header = ({ siteTitle, wpPages, wpPost }) => (
             )}
             <NavDropdown title="Blog Posts">
               {wpPost.map(item => <NavDropdown.Item key={`post-${item.id}`} href={`/blog/${item.slug}`}>{item.title}</NavDropdown.Item>)}
-              <NavDropdown.Item><Link to="/blog">Older Blog-posts</Link></NavDropdown.Item>
+              <NavDropdown.Item href={"/blog"}>
+                Older Blog-posts
+                </NavDropdown.Item>
             </NavDropdown>
         </Navbar.Collapse>
       </Container>
