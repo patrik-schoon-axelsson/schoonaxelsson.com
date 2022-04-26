@@ -13,13 +13,17 @@ const IndexPage = () => (
         <h4 className="text-center">Patrik Schöön-Axelsson - Web Developer, IT Support Specialist, Nerd-for-Hire</h4>
         <figure>
           <blockquote className="blockquote">
-            <p>"I'm not a NERD like you, so don't you try explaining how this crap works!</p>
+            <p className="text-center">"I'm not a NERD like you, so don't you try explaining how this crap works!</p>
           </blockquote>
           <figcaption class="blockquote-footer">
-            <cite title="Source Title">A customer, circa 80 years of age, afraid of catching computer-cooties</cite>
+            <cite title="Source Title"className="text-center">A customer, circa 80 years of age, afraid of catching computer-cooties</cite>
           </figcaption>
         </figure>
       </Row>
+      <Row>
+        <StaticImage src="../images/codecode.png" alt="An image of JavaScript code" placeholder="blurred" width={600} />
+      </Row>
+      <hr />
       <Row>
         <p className="text-center">
           Welcome to my personal website. I'm a trained web-developer, IT Support Specialist and general computer-nerd living in Borås, Sweden. 

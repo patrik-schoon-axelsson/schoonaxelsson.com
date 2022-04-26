@@ -4,7 +4,7 @@ import { Container, Navbar,  Nav, NavDropdown } from 'react-bootstrap';
 
 const Header = ({ siteTitle, wpPages, wpPost }) => (
     <Navbar bg="light" expand="md" className="mb-4">
-          <Navbar.Brand href="/" className="text-black m-1">
+          <Navbar.Brand href="/" className="text-black m-1 d-xs-none d-sm-none d-md-block">
             {siteTitle}
           </Navbar.Brand>
       <Container>
