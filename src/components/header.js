@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 import { Container, Navbar,  Nav, NavDropdown } from 'react-bootstrap';
 
 const Header = ({ siteTitle, wpPages, wpPost }) => (
-    <Navbar bg="light" expand="md" className="mb-4">
-          <Navbar.Brand href="/" className="text-black m-1 d-xs-none d-sm-none d-md-block">
+    <Navbar bg="dark" expand="md" className="mb-4">
+          <Navbar.Brand href="/" className="text-white m-1 d-xs-none d-sm-none d-md-block">
             {siteTitle}
           </Navbar.Brand>
       <Container>

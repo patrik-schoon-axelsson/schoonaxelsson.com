@@ -40,9 +40,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} wpPages={data.allWpPage.nodes} wpPost={data.allWpPost.nodes} />
-      <div>
         <main style={{minHeight: '80vh'}}>{children}</main>
-      </div>
       <Footer />
     </>
   )
