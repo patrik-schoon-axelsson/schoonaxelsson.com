@@ -3,13 +3,14 @@ import PropTypes from "prop-types";
 import { Container, Navbar,  Nav, NavDropdown } from 'react-bootstrap';
 
 const Header = ({ siteTitle, wpPages, wpPost }) => (
-    <Navbar bg="dark" expand="md" className="mb-4">
-          <Navbar.Brand href="/" className="text-white m-1 d-xs-none d-sm-none d-md-block">
+    <Navbar bg="dark" variant="dark" expand="md" className="mb-4">
+          <Navbar.Brand href="/" className="text-white m-1">
             {siteTitle}
           </Navbar.Brand>
       <Container>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
+          <Nav>
             {wpPages.map(item => 
               <Nav.Link key={item.id} href={`/pages${item.uri}`}>
               {item.title}
@@ -21,6 +22,7 @@ const Header = ({ siteTitle, wpPages, wpPost }) => (
                 Older Blog-posts
                 </NavDropdown.Item>
             </NavDropdown>
+            </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
