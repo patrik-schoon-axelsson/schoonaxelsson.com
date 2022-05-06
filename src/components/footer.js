@@ -3,8 +3,8 @@ import {Container, Row, Col} from 'react-bootstrap'
 
 const Footer = () => {
     return (
-        <Container className="bg-dark" fluid>
-            <Row>
+        <Container fluid className="bg-dark" >
+            <Row xs={12}>
                 <p className="text-center m-1 text-white">Patrik Schöön-Axelsson © {new Date().getFullYear()}, Built with {` `} <a href="https://www.gatsbyjs.com">Gatsby</a>. See links below for contact-information.</p>
             </Row>
             <Row>

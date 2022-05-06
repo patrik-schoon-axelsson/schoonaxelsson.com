@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Footer from './footer';
 import Header from "./header"
-import "./layout.css"
+// import "./layout.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -40,8 +40,10 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} wpPages={data.allWpPage.nodes} wpPost={data.allWpPost.nodes} />
-        <main style={{minHeight: '80vh'}}>{children}</main>
-      <Footer />
+          <main style={{minHeight: '80vh'}}>
+            {children}
+          </main>
+        <Footer />
     </>
   )
 }
