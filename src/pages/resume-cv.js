@@ -8,9 +8,9 @@ const ResumeCV = ({ data }) => {
     return <Layout>
             <Container>
                 <Row>
-                    <Col sm={2} md={3} className="d-xs-none d-sm-block">
+                    <Col sm={2} md={3} className="d-none d-sm-block">
                         <ProfileImg />
-                        <br/>
+                        <hr/>
                         Download CV Link
                     </Col>
                     <Col sm={10} md={9}>
@@ -51,7 +51,7 @@ const ResumeCV = ({ data }) => {
                                         <tr>
                                             <td>Python</td>
                                             <td>Django, Flask, BeautifulSoup, Tkinter</td>
-                                            <td></td>
+                                            <td>CloudLinux / cPanel, onApp VPS, Linode, Digital Ocean</td>
                                             <td>DNS troubleshooting, Bind configuration</td>
                                             <td>Volunteering, SFI-school</td>   
                                         </tr>

@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import { Container, Row } from 'react-bootstrap';
 import Layout from "../components/layout"
@@ -15,8 +14,8 @@ const IndexPage = () => (
           <blockquote className="blockquote">
             <p className="text-center">"I'm not a NERD like you, so don't you try explaining how this crap works!</p>
           </blockquote>
-          <figcaption class="blockquote-footer">
-            <cite title="Source Title"className="text-center">A customer, circa 80 years of age, afraid of catching computer-cooties</cite>
+          <figcaption class="blockquote-footer text-center">
+            <cite title="Source Title">A customer, circa 80 years of age, afraid of catching computer-cooties</cite>
           </figcaption>
         </figure>
       </Row>
@@ -36,6 +35,13 @@ const IndexPage = () => (
           extremely interesting and varied position. Working in web hosting, with a client base ranging from professional developers to 
           small-business owners operating ecommerce-projects, means there's always something new!
         </p>
+        <hr/>
+        <p className="text-center">
+          I'm also a passionate JavaScript nerd. While I write Python and Bash more frequently in my day-to-day work, I do have a fondness
+          for our little friend from ECMA and his big brother Typescript. Say what you will about the language, the is a brilliant, vibrant
+          community producing some amazing open source code for JavaScript that takes a whole lot of flak because they managed 
+        </p>
+        
       </Row>
     </Container>
   </Layout>

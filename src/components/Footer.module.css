@@ -1,0 +1,7 @@
+.footerLink a {
+    color: #fff;
+}
+.footerLink a:hover {
+    text-decoration: underline;
+    color: skyblue;
+}
