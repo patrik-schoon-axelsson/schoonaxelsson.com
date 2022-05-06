@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../components/layout'
 import { Container, Row, Col } from 'react-bootstrap';
+import ProfileImg from '../components/ProfileImg';
 
 const ResumeCV = ({ data }) => {
     
@@ -8,7 +9,7 @@ const ResumeCV = ({ data }) => {
             <Container>
                 <Row>
                     <Col sm={2} md={3} className="d-xs-none d-sm-block">
-                        Summary
+                        <ProfileImg />
                         <br/>
                         Download CV Link
                     </Col>

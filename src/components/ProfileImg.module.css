@@ -1,0 +1,8 @@
+.imgRounded img{
+    border-radius: 50%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.imgRounded img:hover{
+    filter: grayscale(100%);
+}
